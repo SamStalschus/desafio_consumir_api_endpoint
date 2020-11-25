@@ -11,7 +11,7 @@ $(document).ready(function(){
             success : function(data){
                 console.log(data);
 
-                $("#cep").val(data[0].cep);
+                $("#cep").val(data[0].cep);                              /*preenche o valor com o valor obtido na req*/
                 $("#bairro").val(data[0].bairro);
                 $("#uf").val(data[0].uf);
                 $("#cidade").val(data[0].localidade);
@@ -19,7 +19,7 @@ $(document).ready(function(){
             },
             error : function(erro){
                 console.log(erro)
-                alert("Rua inexistente em Goiânia");
+                alert("Rua inexistente em Goiânia"); //cria um alerta para caso de erro
             }
         });
 

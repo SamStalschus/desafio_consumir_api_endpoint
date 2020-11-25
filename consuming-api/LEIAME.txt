@@ -25,3 +25,5 @@ em html/JS(Jquery) o index.html juntamente com o script.js fazem o front end:
 
 -->Ao executar o código, basta preencher a rua de Goiânia :).
 
+--> ex: Rua Suely Fraissat
+
