@@ -13,7 +13,6 @@ app.post('/:rua', async(req, res) =>{
     try {
     //pega apenas o data da resposta(response), ou seja apenas os dados
         const { data }  = await axios('https://viacep.com.br/ws/GO/Goiania/'+ rua +'/json/')
-        //const { data }  = await axios('https://viacep.com.br/ws/'+ rua +'/json/')
         
         return res.json( data )
 

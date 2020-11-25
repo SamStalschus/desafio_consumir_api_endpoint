@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $("#rua").focusout(function(){
+    $("#rua").focusout(function(){ /*Função para quando o usuário  perder o foco*/
         var rua = $("#rua").val();
 
         var urlStr = "http://localhost:3008/"+ rua ;
