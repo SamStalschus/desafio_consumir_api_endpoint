@@ -1,25 +1,105 @@
+<!DOCTYPE html>
 <html>
- <head>
- <title>Formulário HTML</title>
- <meta charset=utf-8" />
- </head>
- <body>
- <h2>Formulário HTML</h2>
- <p>Prencha o campo "Rua" com a rua de Goiânia</p>
-	<div><label for="">Rua</label><input  id="rua" required="require" placeholder="Escreva a rua" type="text" onblur="src">
-        </div></label><br />
-			<div><label for="">Bairro</label><input  id="bairro" placeholder="Bairro" type="text">
-				</div></label><br />
-					<div><label for="">Cidade</label><input  id="cidade" placeholder="Cidade" type="text">
-						</div></label><br />
-					<div><label for="">UF</label><input  id="uf" placeholder="uf" type="text">
-				</div></label><br /> 
-            <div><label for="">CEP</label><input  id="cep" placeholder="CEP" type="text">
-        </div>
-    <script
+<head lang="pt-br">
+
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+		
+		body{
+		    margin: 0px;
+    		padding: 0px;
+    		font-family: 'Open Sans', sans-serif;
+		    background: #ff7b3d;
+		}
+		.caixa{
+	margin-top: 8%;
+    width: 300px;
+    padding:  40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background:	#F0FFFF;
+    text-align: center;
+    border-radius: 15px;
+	}
+		.caixa input[type = "text"], .caixa input[type = "text"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: rgb(49, 25, 25);
+    border-radius: 24px;
+    transition: 0.25s;
+	}
+		.caixa input[type = "text"]:focus, .caixa input[type = "text"]:focus{
+    width: 280px;
+    border-color: #ff7b3d;
+
+	}
+		.caixa input[type = "submit"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #ffa545;
+    padding: 14px 40px;
+    width: 200px;
+    outline: none;
+    color: rgb(37, 15, 15);
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+	}
+		.caixa input[type = "submit"]:hover{
+    background: #ffa545;
+    
+	}
+
+
+	</style>
+
+
+	<meta charset="utf-8">
+	<title>Formulário HTML5</title>
+
+</head>
+<body>
+
+	<form class="caixa">
+		<h2>Preencha o Formulário abaixo</h2>
+			<p>Por favor, Preencha com informações de Goiânia.</p>
+
+		<label class="rotulo" for="">Rua</label>
+		<input  id="rua" required="require" placeholder="Escreva a rua" type="text" onblur="src">
+
+		<label class="rotulo" for="">Bairro</label>
+		<input  id="bairro" placeholder="Bairro" type="text">
+
+		<label class="rotulo" for="">Cidade</label>
+		<input  id="cidade" placeholder="Cidade" type="text">
+
+		<label class="rotulo" for="">UF</label>
+		<input  id="uf" placeholder="uf" type="text">
+
+		<label class="rotulo" for="">CEP</label>
+		<input  id="cep" placeholder="CEP" type="text">
+
+		<input type="submit">
+
+		<script
 	src="https://code.jquery.com/jquery-3.3.1.js"
 	integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
 	crossorigin="anonymous"></script>
     <script src="script.js"></script>
- </body>
+
+	</form>
+
+</body>
 </html>
