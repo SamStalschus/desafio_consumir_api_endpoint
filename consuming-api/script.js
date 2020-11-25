@@ -1,9 +1,8 @@
 $(document).ready(function(){
     $("#rua").focusout(function(){
         var rua = $("#rua").val();
-        //cep = cep.replace("-", "");
 
-        var urlStr = "https://localhost:3008/"+ rua ;
+        var urlStr = "http://localhost:3008/"+ rua ;
 
         $.ajax({
             url : urlStr,
@@ -12,14 +11,15 @@ $(document).ready(function(){
             success : function(data){
                 console.log(data);
 
-                $("#cep").val(data.cep);
-                $("#bairro").val(data.bairro);
-                $("#uf").val(data.uf);
-                $("#cidade").val(data.localidade);
+                $("#cep").val(data[0].cep);
+                $("#bairro").val(data[0].bairro);
+                $("#uf").val(data[0].uf);
+                $("#cidade").val(data[0].localidade);
 
             },
             error : function(erro){
                 console.log(erro)
+                alert("Rua inexistente em Goiânia");
             }
         });
 

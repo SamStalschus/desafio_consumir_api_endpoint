@@ -6,7 +6,7 @@ const axios = require('axios')
 app.use(cors())
 
 //rota em que a pessoa informa a rua e obtem todo o endereço
-app.get('/:rua', async(req, res) =>{
+app.post('/:rua', async(req, res) =>{
 
     const rua = req.params.rua
 
