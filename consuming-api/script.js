@@ -1,5 +1,7 @@
-$(document).ready(function(){ //executa quando a pag for carregada via jquery
-    $("#rua").focusout(function(){ /*Função para quando o usuário  perder o foco*/
+ //executa quando a pag for carregada via jquery
+$(document).ready(function(){
+     //Função para quando o usuário  perder o foco
+    $("#rua").focusout(function(){
         var rua = $("#rua").val();
 
         var urlStr = "http://localhost:3008/"+ rua ;
@@ -12,10 +14,12 @@ $(document).ready(function(){ //executa quando a pag for carregada via jquery
                 console.log(data);
                     try {
                         var i = 0;
-                        while(data[i].localidade == "Aparecida de Goiânia"){ //para parar de incluir aparecida de Goiânia nas buscas
+                         //para parar de incluir aparecida de Goiânia nas buscas
+                        while(data[i].localidade == "Aparecida de Goiânia"){
                             i++;
                         }
-                        $("#cep").val(data[i].cep);             //preenche o valor com o valor obtido na req
+                        //preenche o valor com o valor obtido na req
+                        $("#cep").val(data[i].cep);             
                         $("#bairro").val(data[i].bairro);
                         $("#uf").val(data[i].uf);
                         $("#cidade").val(data[i].localidade);
@@ -27,14 +31,12 @@ $(document).ready(function(){ //executa quando a pag for carregada via jquery
             },
             error : function(erro){
                 console.log(erro)
-                // //cria um alerta para caso de erro
             }
         });
-
     });
-
+    //limpa os dados
     function limparDados(){
-        $("#cep").val(null);        //limpa os dados
+        $("#cep").val(null);        
         $("#bairro").val(null);
         $("#uf").val(null);
         $("#cidade").val(null);
