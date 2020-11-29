@@ -1,43 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html>	
 <head lang="pt-br">
 
-	<style type="text/css">
+	<style type="text/css"> /*folha de estilo*/
 		@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 		
-		body{
+		body{ /*reset css*/
 		    margin: 0px;
     		padding: 0px;
     		font-family: 'Open Sans', sans-serif;
 		    background: #ff7b3d;
 		}
-		.caixa{
-	margin-top: 8%;
+		.caixa{ /*caixa branca*/
+	margin-top: 8%; /*margem do topo */
     width: 300px;
     padding:  40px;
-    position: absolute;
-    top: 50%;
+    position: absolute; /*mantem tudo no lugar*/
+    top: 50%; 
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); /*faz a caixinha abrir com o click*/
     background:	#F0FFFF;
     text-align: center;
     border-radius: 15px;
 	}
-		.caixa input[type = "text"], .caixa input[type = "text"]{
-    border: 0;
+		.caixa input[type = "text"]{
     background: none;
-    display: block;
+    display: block; /*um embaixo do outro em bloco*/
     margin: 20px auto;
     text-align: center;
-    border: 2px solid #3498db;
+    border: 2px solid #3498db; 
     padding: 14px 10px;
     width: 200px;
-    outline: none;
+    outline: none; /*sem linha fora*/
     color: rgb(49, 25, 25);
-    border-radius: 24px;
+    border-radius: 24px; /*arredonda os cantos da box*/
     transition: 0.25s;
 	}
-		.caixa input[type = "text"]:focus, .caixa input[type = "text"]:focus{
+		.caixa input[type = "text"]:focus{  /*animação de click*/
     width: 280px;
     border-color: #ff7b3d;
 
@@ -67,7 +66,7 @@
 
 
 	<meta charset="utf-8">
-	<title>Formulário HTML5</title>
+	<title>Formulário</title>
 
 </head>
 <body>
@@ -76,22 +75,22 @@
 		<h2>Preencha o Formulário abaixo</h2>
 			<p>Por favor, Preencha com informações de Goiânia.</p>
 
-		<label class="rotulo" for="">Rua</label>
-		<input  id="rua" required="require" placeholder="Escreva a rua" type="text" onblur="src">
+		Rua
+		<input  id="rua" required="require" placeholder="Escreva a rua" type="text" >
 
-		<label class="rotulo" for="">Bairro</label>
+		Bairro
 		<input  id="bairro" placeholder="Bairro" type="text">
 
-		<label class="rotulo" for="">Cidade</label>
+		Cidade
 		<input  id="cidade" placeholder="Cidade" type="text">
 
-		<label class="rotulo" for="">UF</label>
-		<input  id="uf" placeholder="uf" type="text">
+		UF
+		<input  id="uf" placeholder="UF" type="text">
 
-		<label class="rotulo" for="">CEP</label>
+		CEP
 		<input  id="cep" placeholder="CEP" type="text">
 
-		<input type="submit">
+		<input type="submit" value="Enviar">
 
 		<script
 	src="https://code.jquery.com/jquery-3.3.1.js"

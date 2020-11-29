@@ -21,6 +21,5 @@ app.post('/:rua', async(req, res) =>{
     }
 
 })
-
 //ouvinte para ouvir a porta 3008
 app.listen('3008') 
