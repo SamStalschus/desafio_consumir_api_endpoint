@@ -1,28 +1,72 @@
-Essa aplicação está sendo desenvolvida com o intuito de consumir a api viacep através de um endpoint que retornará um json para o front.
+<h1 align="center">
+  Challenge API consuming endPoint ViaCep
+</h1>
 
-em node o server.js -> faz todo o back end:
-- Implementa um endpoint para consulta do CEP
-- Ao receber requisição do cliente, extrai o nome da rua do JSON
-- Consulta api via CEP
-- gerar JSON de resposta
+<p align="center">
+  <a href="#-Technologies">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-Project">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#memo-How to use">Licença</a>
+</p>
+
+<p align="center">
+ <img src="https://img.shields.io/static/v1?label=PRs&message=welcome&color=49AA26&labelColor=000000" alt="PRs welcome!" />
+
+  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000">
+</p>
+
+<br>
+
+<p align="center">
+  <img alt="dev.finances" src="consuming-api/print.png" width="100%">
+
+</p>
 
 
-em html/JS(Jquery) o index.html juntamente com o script.js fazem o front end:
-- Pega dados do usuário
-- Enviar requisição via REST (http POST)
-- Pegar reposta e preencher com os dados
+## 🚀 Technologies
+
+Esse projeto foi desenvolvido com as seguintes tecnologias:
+
+- HTML
+- CSS
+- JavaScript
+- Nodejs
+- Express
+- JQuery
 
 
---------------Como utilizar----------
+## 💻 Project
 
---> para os testes é necessário ter o node.js instalado
+This application was a challenge I received to start working at the startup Buzzlead as an internship. The challenge was to develop a Rest API that would consume a ViaCep EndPoint, and make a Frontend that when typing the street name would automatically complete the zip code and other address data.
 
--->Para executar o arquivo de back-end "server.js" será necessário instalar os seguintes modulos : nodemon, express, axios e cors. => comando "node i nodemon express axios cors"
 
--->Apos executado o "server.js" o nosso endpoint esta no ar, e para fazer uma requisição post, basta acessar o endereço: "http://local:host/3008/Nome da rua" e ele retornara os dados de endereço no formato json
+## :memo: How to use
 
--->Para executar o front de teste deve ser executado o arquivo "index.html" que traz em seu body o "script.js", para testar o front recomendo instalar no terminal o "lite-server" que tem um tipo de leitura automática do código HTML atraves da criação de um servidor comando =>> "npx lite-server"
+in node the server.js -> does all the backend:
+- Implements an endpoint for querying the zip code
+- Upon receiving request from the client, extracts the street name from JSON
+- Query api via ZIP code
+- generate response JSON
 
--->Ao executar o código, basta preencher a rua de Goiânia :).
 
---> ex: Rua Suely Fraissat
+in html/JS(Jquery) the index.html together with script.js do the front end:
+- Gets data from user
+- Send request via REST (http POST)
+- Get response and fill in the data
+
+
+--------------steps----------
+
+--> for the tests, you must have node.js installed
+
+-->To run the back-end file "server.js" you must install the following modules: nodemon, express, axios and cors. => command "node i nodemon express axios cors"
+
+-->After running "server.js" our endpoint is up, and to make a post request, simply access the address: "http://local:host/3008/Nome da rua" and it will return the address data in json format
+
+-->To run the test front must be executed the file "index.html" that brings in its body the "script.js", to test the front I recommend installing in terminal the "lite-server" that has a type of automatic reading of HTML code through the creation of a server command => "npx lite-server
+
+--> When executing the code, just fill in the street in Goiânia :).
+
+--> ex: Suely Fraissat Street
+
+
+Translated with www.DeepL.com/Translator (free version)
