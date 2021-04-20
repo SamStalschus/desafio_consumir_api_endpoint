@@ -68,5 +68,3 @@ in html/JS(Jquery) the index.html together with script.js do the front end:
 
 --> ex: Suely Fraissat Street
 
-
-Translated with www.DeepL.com/Translator (free version)
